@@ -45,4 +45,4 @@ console.log(k)
 
 let w = 3;
 let f = (w + 3)/3;
-console.log(f)
+console.log(f);
