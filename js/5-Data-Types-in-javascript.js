@@ -51,8 +51,12 @@ console.log(m)
 // ---------------------------------------------------
 
 let n = "Fayyaz";
-alert("Hello"+ n);
+// alert("Hello"+ n);
 
 let o = "fayyaz";
 let p =  `Hello  ${o}`
 console.log(p)
+
+let x ;
+let y = {}
+console.log(typeof typeof   typeof typeof y)
