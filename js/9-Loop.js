@@ -50,9 +50,9 @@ let d = 1;
 do {
     document.write("Hello Guys");
     d++ ;
-}while(12 <= 10);
+ } while(12 <= 10);
 
-document.write("<br>")
+// document.write("<br>")
 
 let e = 1;
 do {
@@ -60,7 +60,7 @@ do {
     e++ ;
 }while(e <= 10);
 
-// For-Loop
+// // For-Loop
 
 for(let counter4 = 1 ; counter4 <= 10 ; counter4++){
     document.write("My name is Fayyazurrehman" + "<br>")
