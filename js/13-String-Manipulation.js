@@ -1,5 +1,5 @@
 let a = 'HELLO BRO';
-let b = "HY BROTHEr";
+let b = "HY BROTHER";
 console.log(a + b);
 
 var c = ` ${a} ${b} My Name Is Fayyazurrehman`;
