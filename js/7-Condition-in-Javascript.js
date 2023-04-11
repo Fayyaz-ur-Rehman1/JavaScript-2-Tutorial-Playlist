@@ -47,31 +47,31 @@ let choese = "Yes";
 
 if (age >= 18 && choese == "Yes") {
     alert("yes u are elegibal")
-} else if (age <= 17 && choese == "Yes"){
+} else if (age <= 17 && choese == "Yes") {
     alert("no you are not elegibale")
-}else{
+} else {
     alert(" you cannot chose the vote")
-} 
+}
 
 let x = 14;
 let y = "right";
 if (x >= 10) {
-    if (y == "riht") {
+    if (y == "right") {
         alert("yes");
     } else {
         alert("No");
     }
 } else {
     alert("you cannot vote")
-} 
+}
 
-let isloggedin = 0 ;
-if(isloggedin == 0){
+let isloggedin = 0;
+if (isloggedin == 0) {
     document.write('Login')
-}else {
+} else {
     document.write('logout')
 }
- 
+
 document.write("<br>")
 
 // Conditional ternory
@@ -88,9 +88,15 @@ console.log(user ?? "Guest User");
 let nul = null;
 console.log(nul ?? "Nothing")
 
-let num = 0 ;
+let num = 0;
 console.log(num ?? 3)
 
-let user1 ;
+let user1;
 user1 = "fayyazurrehman";
-console.log(user1)
+console.log(user1);
+
+var l ;
+console.log(a ?? "Not define");
+
+let u =  null;
+console.log(u ?? "value is mt");
