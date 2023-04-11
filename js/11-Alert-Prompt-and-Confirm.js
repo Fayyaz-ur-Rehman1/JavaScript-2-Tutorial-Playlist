@@ -22,3 +22,9 @@ if (c){
 }else{
     document.write("Not Deleted")
 }
+
+let d = confirm("hello")
+console.log(d)
+
+let e = prompt("hello");
+document.write(e)
