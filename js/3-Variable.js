@@ -1,7 +1,7 @@
 // variable  => var and let and const is a variable type and a b c is a variable name and 13 is a variable value
 var a = 13;
 a = 55;
-console.log(a)
+console.log(a);
 
 var a = "fayyaz";
 console.log(a);
