@@ -12,7 +12,7 @@ let num1 = 14 * "null";
 console.log(num1);
 console.log(num1);
 
-let num2 = true - "23";
+let num2 = true + "23";
 console.log(num2);
 console.log(typeof num2);
 
@@ -32,8 +32,8 @@ console.log(typeof num3);
 // String
 
 let num4 = 23;
-console.log(str3);
-console.log(typeof str3);
+console.log(num4);
+console.log(typeof num4);
 var str3 = String(num4)
 console.log(typeof str3)
 
@@ -53,18 +53,18 @@ console.log(num5)
 console.log(typeof num5)
 
 let boolean1 = true;
-console.log(boolean);
+console.log(boolean1);
 console.log(typeof boolean1);
 var num6 = Number(boolean1);
 console.log(typeof num6)
 
-// Boolean
+// // Boolean
 
 let num7 = 24;
 console.log(num7);
 console.log(typeof num7);
 var boolean3 = Boolean(num7);
-console.log(boolean3);
+console.log(typeof boolean3);
 
 let str6 = "true";
 console.log(str6);
