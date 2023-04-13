@@ -8,12 +8,11 @@ let insertbef = document.getElementById("insertul");
 let createelm1 = document.createElement("li");
 createelm1.textContent = " new List 0 ";
 let position = insertbef.firstElementChild;
-insertbef.insertBefore(createelm1 , position)
+insertbef.insertBefore(createelm1 , position);
 
 let insertbef1 = document.getElementById("insertul");
 let createelm1 = document.createElement("li");
 createelm1.textContent = " new List 0 ";
-let position1 = insertbef1.firstElementChild.nextElementSibling
-.nextElementSibling.nextElementSibling;
+let position1 = insertbef1.firstElementChild.nextElementSibling.nextElementSibling
+.nextElementSibling.previousElementSibling
 insertbef1.insertBefore(createelm1 , position1);
-
