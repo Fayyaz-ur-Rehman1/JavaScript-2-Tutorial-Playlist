@@ -8,5 +8,5 @@ window.addEventListener("load" , function(){
 
 let img1 = document.getElementById("img1");
 img1.addEventListener("load", function(){
-    console.log("Fully loaded");
+    console.log("Fully loaded")
 });
