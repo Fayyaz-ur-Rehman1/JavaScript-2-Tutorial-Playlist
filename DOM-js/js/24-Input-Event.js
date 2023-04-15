@@ -8,9 +8,9 @@ x.addEventListener("input", function () {
     console.log(this.value)
 })
 
-// x.addEventListener("input",function () {
-//     alert(this.value)
-// })
+x.addEventListener("input",function () {
+    alert(this.value)
+})
 
 function focusfunction() {
     x.style.background = "pink"
@@ -20,4 +20,4 @@ function focusfunction() {
 function blurfunction() {
     x.style.background = "white"
     x.style.color = "white"
-}
+} 
