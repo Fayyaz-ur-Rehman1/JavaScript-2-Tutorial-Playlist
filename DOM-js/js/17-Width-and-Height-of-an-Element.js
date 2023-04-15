@@ -11,4 +11,4 @@ let e = d.clientHeight;
 let f = d.clientWidth;
 
 console.log(e);
-console.log(f); 
+console.log(f);
