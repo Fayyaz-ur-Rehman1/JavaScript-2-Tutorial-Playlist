@@ -8,29 +8,49 @@
     <title>document-Object-Module</title>
 
     <style type="text/css">
-        /* #get-computed-CSS {
+        #get-computed-CSS {
             background-color: blue;
             color: white;
-        } */
+        }
         .color {
             background-color: grey;
             color: yellow;
         }
+
         .dim {
             border: 2px solid red;
             padding: 100px;
+        }
+
+        #box4 {
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+        } */
+
+        #heading1 {
+            height: 20000px;
+        }
+
+         #container6 {
+            padding: 100px;
+            background-color: cornsilk;
+        }
+        #mydiv {
+            padding: 50px;
+            background-color: aquamarine;
         }
     </style>
 </head>
 
 <body>
-    <!-- <ul>
+    <ul>
         <li class="cl">List 1</li>
         <li id="first">List 2</li>
         <li class="cl">List 3</li>
-    </ul> -->
+    </ul>
 
-    <!-- <h2>headng 1</h2>
+    <h2>headng 1</h2>
     <div id="container">
         <p>paragrph 1</p>
         <div id="ptag">
@@ -39,111 +59,190 @@
             <h2>heading 3</h2>
             <p>paragraph 3</p>
         </div>
-    </div> -->
+    </div>
 
     <hr>
 
-    <!-- <div>
+    <div>
         <p class="intro">p 0</p>
         <h2 class="intro">Hello</h2>
         <p>yahoo</p>
-        <h2>guys</h2>
+        <h2 class="intro">guys</h2>
         <p class="intro">p 2</p>
-    </div> -->
+    </div>
 
     <hr>
 
-    <!-- <ul>
+    <ul>
         <li id="second">list 1</li>
         <li id="second">list 2</li>
         <li>list 3</li>
         <li>list 4</li>
-    </ul> -->
+    </ul>
 
-    <!-- <ul id="main">
+    <ul id="main">
         <li>list a</li>
         <li>list b</li>
         <li>list c</li>
         <li>list d</li>
-    </ul> -->
+    </ul>
 
-    <!-- <ul>
+    <ul>
         <li id="four">List 1</li>
         <li>List 2</li>
         <li id="third">List 3</li>
-    </ul> -->
-    <!-- 
+    </ul>
+    
     <div id="container2">
         <p>Hello this is a p tag</p>
-    </div> -->
+    </div>
 
-    <!-- <div id="container3">
+    <div id="container3">
         <p id="pread">Hello ya yahooo</p>
-    </div> -->
+    </div>
 
-    <!-- <ul id="insertul">
+    <ul id="insertul">
         <li id="first1">list 1</li>
         <li>list 2</li>
         <li>list 3</li>
         <li>list 4</li>
-    </ul> -->
+    </ul>
 
-    <!-- <ul id="menu">
+    <ul id="menu">
         <li>Home</li>
         <li>Product</li>
         <li>About us</li>
-    </ul> -->
-    <!-- 
+    </ul>
+    
     <ul id="menu2">
         <li>Home</li>
         <li>Product</li>
         <li>Service</li>
         <li>About</li>
-    </ul> -->
-    <!-- 
+    </ul>
+    
     <ul id="menu3">
         <li>Home</li>
         <li>Product</li>
         <li>About us</li>
-    </ul> -->
+    </ul>
 
 
-    <!-- beforbegin -->
-    <!-- <div id="insertadjecnet"> -->
+   <!-- beforbegin -->
+    <div id="insertadjecnet">
     <!-- afterbegin -->
-    <!-- <h2>Heading</h2>
+    <h2>Heading</h2>
         <p>This is a P tag</p>
-    </div> -->
+    </div>
 
-    <!-- <button id="attribute1">Send</button> -->
+    <button id="attribute1">Send</button>
 
 
-    <!-- <button id="inlinestyle">Send</button> -->
+    <button id="inlinestyle">Send</button>
 
-    <!-- <button id="get-computed-CSS">Send</button> -->
+     <button id="get-computed-CSS">Send</button>
 
     <div id="box" class="color ">
-       <p>This is a P tag</p>
+        <p>This is a P tag</p>
     </div>
 
 
+    <div id="box2" class="color  dim">
+        <p>This is a P tag</p>
+    </div>
+
+
+    button id="btn" onclick="fn()">Click Me !</button>
+    <hr>
+    <button id="listner">Click on !</button>
+    <hr>
+    <button id="listner2" >Click hair !</button>
+   <hr>
+   <button id="multiple">Multiple Event Listner</button>
+    <hr>
+    <button id="removelistener">Click meeee</button>
+    <hr>
+
+    <img id="img1" src="https://wall.alphacoders.com/profile.php?id=65560" alt="">
+
+   <div id="box4" onclick="fay()">
+        <p>this is onclick Event</p>
+    </div>
+    <br>
+
+    <div id="box4" oncontextmenu="fay2()">
+        <p>this is oncontextmenu Event</p>
+    </div>
+    <br>
+
+    <div id="box4" ondblclick="fay3()">
+        <p>this is double click Event</p>
+    </div>
+    <br>
+
+    <div id="box4" onmousedown="fay4()">
+        <p>this is onmousedown Event</p>
+    </div>
+    <br>
+
+    <div id="box4" onmouseup="fay5()">
+        <p>this is onmouseup Event</p>
+    </div>
+    <br>
+
+    <div id="box4" onmouseover="fay6()">
+        <p>this is onmouseover event Event</p>
+    </div>
+    <br>
+
+    <div id="box4" onmouseout="fay7()">
+        <p>this is onmouseout event Event</p>
+    </div>
+    <br>
+
+    <h1 id="heading1">Hello</h1>
+
+    <input type="text" id="input-form">
+     
+    <div id="container6">
+    <div id="mydiv">
+        <button id="btn">Click meeeeeeee</button>
+    </div>
+</div>
+
+<a href="https://www.google.com" id="anchor">Click Meee</a>
+
+<form action="" id="myform">
+    <input type="text">
+    <input type="submit">
+</form>
 
 </body>
-<!-- <script src="./js/1-select-an-element-by-id.js"></script> -->
-<!-- <script src="./js/2-select-an-element-by-class-Name.js"></script> -->
-<!-- <script src="./js/3-select-an-element-bt-Tag-Name.js"></script> -->
-<!-- <script src="./js/4-Query-Selector.js"></script> -->
-<!-- <script src="./js/5-Traversing-elements.js"></script> -->
-<!-- <script src="./js/6-inner-HTML.js"></script> -->
-<!-- <script src="./js/8-Insert-Before.js"></script> -->
-<!-- <script src="./js/7-Create-and-Append-Element.js"></script> -->
-<!-- <script src="./js/9-Remove-Child-Element.js"></script> -->
-<!-- <script src="./js/10-Clone-Element.js"></script> -->
-<!-- <script src="./js/11-Replace-Element.js"></script> -->
-<!-- <script src="./js/12-Insert-Adjacent-HTML.js"></script> -->
-<!-- <script src="./js/13-Change-Attribute.js"></script> -->
-<!-- <script src="./js/14-Inline-Style.js"></script> -->
-<!-- <script src="./js/15-get-computed-CSS.js"></script> -->
+<script src="./js/1-select-an-element-by-id.js"></script>
+<script src="./js/2-select-an-element-by-class-Name.js"></script>
+<script src="./js/3-select-an-element-bt-Tag-Name.js"></script>
+<script src="./js/4-Query-Selector.js"></script>
+<script src="./js/5-Traversing-elements.js"></script>
+<script src="./js/6-inner-HTML.js"></script>
+<script src="./js/8-Insert-Before.js"></script>
+<script src="./js/7-Create-and-Append-Element.js"></script>
+<script src="./js/9-Remove-Child-Element.js"></script>
+<script src="./js/10-Clone-Element.js"></script>
+<script src="./js/11-Replace-Element.js"></script>
+<script src="./js/12-Insert-Adjacent-HTML.js"></script>
+<script src="./js/13-Change-Attribute.js"></script>
+<script src="./js/14-Inline-Style.js"></script>
+<script src="./js/15-get-computed-CSS.js"></script>
 <script src="./js/16-CSS-Classes.js"></script>
+<script src="./js/17-Width-and-Height-of-an-Element.js"></script>
+<script src="./js/18-DOM-Event.js"></script>
+<script src="./js/19-Remove-EventListener.js"></script>
+<script src="./js/20-Page-Load-Events.js"></script>
+<script src="./js/21-Mouse-Event.js"></script>
+<script src="./js/22-Key-Down-Event.js"></script>
+<script src="./js/23-Scroll-Events.js"></script>
+<script src="./js/24-Input-Event.js"></script>
+<script src="./js/25-Event-Bubbling&Event-Capturing.js"></script>
+<script src="./js/26-Prevent-Default.js"></script>
 
 </html>
