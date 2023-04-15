@@ -7,4 +7,4 @@ console.log(elm.innerHTML);
 
 // // value set
 let elm1 = document.getElementById("first");
-elm.innerHTML = "<p> Hello </p>"
+elm.innerHTML = "<p> Hello </p>";

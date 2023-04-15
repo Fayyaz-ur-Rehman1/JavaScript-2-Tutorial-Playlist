@@ -1,9 +1,9 @@
- let a = document.getElementById("box2");
- let b = a.offsetWidth;
- let c = a.offsetHeight;
+let a = document.getElementById("box2");
+let b = a.offsetWidth;
+let c = a.offsetHeight;
 
- console.log(b);
- console.log(c);
+console.log(b);
+console.log(c);
 
 
 let d = document.getElementById("box2");

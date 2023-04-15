@@ -1,7 +1,7 @@
 let trelm1 = document.getElementById("second");
 let preelm = trelm1.parentElement;
-preelm.innerHTML="my name is fayyaz sahab"
-console.log(preelm)
+preelm.innerHTML = "my name is fayyaz";
+console.log(preelm);
 
 let tridelm = document.getElementById("main");
 let childelm = tridelm.firstElementChild;
@@ -18,9 +18,9 @@ let childelmall = tridelm2.children;
 console.log(childelmall)
 
 let tridelm3 = document.getElementById("main");
-let childelmall1 = tridelm2.children;
+let childelmall1 = tridelm3.children;
 
-for (i = 0 ; i < childelmall1.length ; i++){
+for (i = 0; i < childelmall1.length; i++) {
     childelmall1[i].innerHTML = "Hello Guys How Are U"
 }
 

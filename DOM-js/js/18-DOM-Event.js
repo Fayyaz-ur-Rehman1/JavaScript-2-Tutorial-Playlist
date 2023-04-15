@@ -22,10 +22,10 @@ function fn2() {
 let multiplelistner = document.getElementById("multiple");
 multiplelistner.addEventListener('click', fn2);
 
-multiplelistner.addEventListener("mouseover", function (){
+multiplelistner.addEventListener("mouseover", function () {
     console.log("Button was MouseOver")
 });
 
-multiplelistner.addEventListener("mouseout", function (){
+multiplelistner.addEventListener("mouseout", function () {
     console.log("Button was MouseOut")
 });
