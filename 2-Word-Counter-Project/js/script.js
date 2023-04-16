@@ -8,7 +8,7 @@ let pragraph = document.getElementById("pragraph");
 
 
 textbox.addEventListener("input", function () {
-    var text = this.value;
+    var text = this.value
     var char = text.length;
     var select = document.getElementById("char");
     select.innerHTML = char;
