@@ -12,4 +12,4 @@ function changeBG(color) {
             elm.style = "black"
         }
     }
-};
+}; 
