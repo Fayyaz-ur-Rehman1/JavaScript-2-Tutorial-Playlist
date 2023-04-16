@@ -20,7 +20,7 @@ cel.addEventListener("input", function () {
 
 fah.addEventListener("input", function () {
 
-    let f = this.value;
+    let f = this.value
     let c = (f - 32) * 5 / 9;
 
     if (!Number.isInteger(c)) {
