@@ -118,10 +118,10 @@ addli.textContent = "list 5";
 let pos = a1.firstElementChild.nextElementSibling;
 a1.insertBefore(addli, pos)
 
-let u = document.getElementById('intro6');
+let u3 = document.getElementById('intro6');
 let elm3 = document.createElement('li');
 elm3.textContent = "hello guys i am list 6";
-let postion = u.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling;
+let postion = u3.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling;
 u.insertBefore(elm3, postion);
 
 let perent = document.body;
@@ -172,6 +172,7 @@ prt.replaceChild(creeelm, replace)
 
 
 
+
 // InsertAdjecent
 
 let a = document.getElementById("intropre");
@@ -181,7 +182,108 @@ let html = "<h1>my name is h1</h1>"
 // a.insertAdjacentHTML('beforeend' , html)
 a.insertAdjacentHTML('afterend' , html);
 
-function recursion() {
-    
 
+Attribute
+
+
+let s = document.getElementById("btn");
+let Attribute = s.setAttribute("class", "fayyaz");
+let Attribute1 = s.getAttribute("class");
+let Attribute2 = s.removeAttribute("class");
+let Attribute4 = s.hasAttribute("class");
+console.log(Attribute4);
+
+
+
+// Inline Style
+
+let u =  document.getElementById("btn1");
+u.style.cssText = "color:red; background:yellow";
+
+let u4 =  document.getElementById("btn1");
+u4.style.cssText += "color:green"
+
+let u2 =  document.getElementById("btn1");
+u2.style.background = "green";
+u2.style.border = "10px solid black"
+
+let u1 =  document.getElementById("btn1");
+u1.setAttribute("style" , "color:green; background:black")
+
+
+
+getComputedStyle
+
+let h = document.getElementById("btn2");
+let css = getComputedStyle(h);
+console.log(css);
+console.log(css.color);
+console.log(css.backgroundColor);
+
+
+
+// CSS Classes 
+
+let p = document.getElementById("box");
+p.classList.add("dim");
+p.classList.remove("dim");
+p.classList.replace("fayyaz","dim");
+let tf = p.classList.contains("dim");
+p.classList.toggle("fayyaz")
+console.log(tf);
+
+
+
+
+// Width and Heigth of an Element
+
+let Width = p.offsetWidth;
+let Heigth = p.offsetHeight;
+
+console.log(Width);
+console.log(Heigth);
+
+
+function fn() {
+    alert("this is onclick")
 }
+
+let btn5 = document.getElementById("btn5");
+
+function fn1(){
+    alert("this is click");
+}
+
+btn5.addEventListener("click" , fn1)
+
+
+btn5.addEventListener('mouseover' , function () {
+    alert("this is mouse down")
+})
+
+btn5.addEventListener('mouseout' , function () {
+    alert("this is mouse out")
+})
+
+
+
+// Remove addEventListener
+
+let btn7 = document.getElementById("btn7");
+
+function click1() {
+    console.log("this is click1");
+}
+function click2() {
+    console.log("this is also click2")
+}
+
+btn7.addEventListener("click", click1);
+btn7.addEventListener("click", click2);
+
+btn7.removeEventListener("click", click2)
+
+
+// Page Load Event
+
+ 
