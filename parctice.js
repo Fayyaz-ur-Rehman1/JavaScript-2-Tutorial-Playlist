@@ -1,4 +1,4 @@
-// //    id Select
+// // //    id Select
 
 
 let elm = document.getElementById("first");
@@ -53,7 +53,7 @@ for (i = 0; i < QueryAll.length; i++) {
 }
 
 
-// // Traversing elements
+// // // Traversing elements
 
 
 let trv = document.getElementById("intro");
@@ -62,25 +62,25 @@ console.log(childtoprt);
 
 let trv1 = document.getElementById("intro2");
 //  let prttochild = trv1.firstElementChild;
-//  let prttochild = trv1.lastElementChild;
-// let prttochild = trv1.children;
-// let prttochild = trv1.nextElementSibling;
-// let prttochild = trv1.nextElementSibling.nextElementSibling;
-// let prttochild = trv1.previousElementSibling;
+// //  let prttochild = trv1.lastElementChild;
+// // let prttochild = trv1.children;
+// // let prttochild = trv1.nextElementSibling;
+// // let prttochild = trv1.nextElementSibling.nextElementSibling;
+// // let prttochild = trv1.previousElementSibling;
 let prttochild = trv1.previousElementSibling.previousElementSibling;
 console.log(prttochild);
 
 
-// innerHTML
+// // innerHTML
 
 
 let idslc = document.getElementById("ptag");
-// idslc.innerHTML;
+idslc.innerHTML;
 idslc.innerHTML = "my name is fayyazurrehman"
 console.log(idslc)
 
 
-// Append
+// // Append
 
 let ap = document.getElementById("intro3");
 let tag = document.createElement("h1");
@@ -95,7 +95,7 @@ tag1.className = "heading h11";
 tag1.id = "fayyaz";
 let text = document.createTextNode("hello bahijaan asslamualikum");
 tag1.appendChild(text)
-// ap1.appendChild(tag1); 
+ap1.appendChild(tag1); 
 
 
 document.body.appendChild(tag1);
@@ -110,7 +110,7 @@ d.appendChild(c)
 console.log(c.textContent);
 
 
-// insert Before
+// // insert Before
 
 let a1 = document.getElementById("intro6");
 let addli = document.createElement("li")
@@ -136,7 +136,7 @@ perent.insertBefore(celm, intro6);
 
 
 
-removeChild
+// removeChild
 
 let perent1 = document.getElementById("menu");
 let Select = perent1.firstElementChild.nextElementSibling.nextElementSibling;
@@ -146,7 +146,7 @@ document.body.removeChild(perent1)
 
 
 
-CloneElement 
+// CloneElement 
 
 let perent4 = document.getElementById("clone")
 let cloneelm = perent4.cloneNode(true);
@@ -161,7 +161,7 @@ console.log(cloneelm3);
 
 
 
-// Replace Element
+// // Replace Element
 
 let prt = document.getElementById("replace")
 let creeelm = document.createElement('li')
@@ -173,17 +173,17 @@ prt.replaceChild(creeelm, replace)
 
 
 
-// InsertAdjecent
+// // InsertAdjecent
 
 let a = document.getElementById("intropre");
 let html = "<h1>my name is h1</h1>"
-// a.insertAdjacentHTML("beforebegin" , html)
-// a.insertAdjacentHTML('afterbegin' , html)
-// a.insertAdjacentHTML('beforeend' , html)
+a.insertAdjacentHTML("beforebegin" , html)
+a.insertAdjacentHTML('afterbegin' , html)
+a.insertAdjacentHTML('beforeend' , html)
 a.insertAdjacentHTML('afterend' , html);
 
 
-Attribute
+// // Attribute
 
 
 let s = document.getElementById("btn");
@@ -195,7 +195,7 @@ console.log(Attribute4);
 
 
 
-// Inline Style
+// // // Inline Style
 
 let u =  document.getElementById("btn1");
 u.style.cssText = "color:red; background:yellow";
@@ -212,7 +212,7 @@ u1.setAttribute("style" , "color:green; background:black")
 
 
 
-getComputedStyle
+// // getComputedStyle
 
 let h = document.getElementById("btn2");
 let css = getComputedStyle(h);
@@ -222,7 +222,7 @@ console.log(css.backgroundColor);
 
 
 
-// CSS Classes 
+// // CSS Classes 
 
 let p = document.getElementById("box");
 p.classList.add("dim");
@@ -235,7 +235,7 @@ console.log(tf);
 
 
 
-// Width and Heigth of an Element
+// // Width and Heigth of an Element
 
 let Width = p.offsetWidth;
 let Heigth = p.offsetHeight;
@@ -267,7 +267,7 @@ btn5.addEventListener('mouseout' , function () {
 
 
 
-// Remove addEventListener
+// // Remove addEventListener
 
 let btn7 = document.getElementById("btn7");
 
@@ -284,6 +284,76 @@ btn7.addEventListener("click", click2);
 btn7.removeEventListener("click", click2)
 
 
-// Page Load Event
+// // Page Load Event
 
- 
+
+
+
+// // MouseEvent
+
+function mouseevent(){
+    alert("onDoubleclick  onmouseover onmouseout onmouseup onmousedown onclick oncontextmenu")
+}
+
+
+// KeyWord
+
+window.addEventListener('keyup', checkkey);//keydown // keyprees
+
+function checkkey(event){
+    console.log(event.key);
+}
+
+
+// Scroll Event
+
+window.addEventListener("scroll" , checkscroll);
+
+function checkscroll() {
+   console.log("scrolling...");
+}
+
+window.addEventListener("wheel" , checkweel);
+
+function checkweel(event){
+    if(event.deltaY < 0){
+        console.log("scroll up");
+    }else if(event.deltaY > 0){
+        console.log("scroll down")
+    }
+}
+
+
+window.addEventListener("scroll", scrollpx)
+
+function scrollpx() {
+    if (window.pageYOffset > 150) {
+        document.body.style.background = "green"
+    } else {
+        document.body.style.background = "white"
+    }
+}
+
+// Input Event
+
+let o = document.getElementById("name");
+
+o.addEventListener("focus" , myfocusfn);
+o.addEventListener("blur" , myblurfn);
+
+// o.addEventListener('change' , function (){
+//     console.log(this.value);
+// })
+
+o.addEventListener('input' , function (){
+    console.log(this.value);
+})
+
+function myfocusfn(){
+  o.style.background = "black";
+  o.style.color = "white"
+}
+
+function myblurfn() {
+    o.style.background = "green"  
+}
