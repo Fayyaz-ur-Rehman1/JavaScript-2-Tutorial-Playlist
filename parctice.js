@@ -95,7 +95,7 @@ tag1.className = "heading h11";
 tag1.id = "fayyaz";
 let text = document.createTextNode("hello bahijaan asslamualikum");
 tag1.appendChild(text)
-ap1.appendChild(tag1); 
+ap1.appendChild(tag1);
 
 
 document.body.appendChild(tag1);
@@ -177,10 +177,10 @@ prt.replaceChild(creeelm, replace)
 
 let a = document.getElementById("intropre");
 let html = "<h1>my name is h1</h1>"
-a.insertAdjacentHTML("beforebegin" , html)
-a.insertAdjacentHTML('afterbegin' , html)
-a.insertAdjacentHTML('beforeend' , html)
-a.insertAdjacentHTML('afterend' , html);
+a.insertAdjacentHTML("beforebegin", html)
+a.insertAdjacentHTML('afterbegin', html)
+a.insertAdjacentHTML('beforeend', html)
+a.insertAdjacentHTML('afterend', html);
 
 
 // // Attribute
@@ -197,18 +197,18 @@ console.log(Attribute4);
 
 // // // Inline Style
 
-let u =  document.getElementById("btn1");
+let u = document.getElementById("btn1");
 u.style.cssText = "color:red; background:yellow";
 
-let u4 =  document.getElementById("btn1");
+let u4 = document.getElementById("btn1");
 u4.style.cssText += "color:green"
 
-let u2 =  document.getElementById("btn1");
+let u2 = document.getElementById("btn1");
 u2.style.background = "green";
 u2.style.border = "10px solid black"
 
-let u1 =  document.getElementById("btn1");
-u1.setAttribute("style" , "color:green; background:black")
+let u1 = document.getElementById("btn1");
+u1.setAttribute("style", "color:green; background:black")
 
 
 
@@ -227,7 +227,7 @@ console.log(css.backgroundColor);
 let p = document.getElementById("box");
 p.classList.add("dim");
 p.classList.remove("dim");
-p.classList.replace("fayyaz","dim");
+p.classList.replace("fayyaz", "dim");
 let tf = p.classList.contains("dim");
 p.classList.toggle("fayyaz")
 console.log(tf);
@@ -250,18 +250,18 @@ function fn() {
 
 let btn5 = document.getElementById("btn5");
 
-function fn1(){
+function fn1() {
     alert("this is click");
 }
 
-btn5.addEventListener("click" , fn1)
+btn5.addEventListener("click", fn1)
 
 
-btn5.addEventListener('mouseover' , function () {
+btn5.addEventListener('mouseover', function () {
     alert("this is mouse down")
 })
 
-btn5.addEventListener('mouseout' , function () {
+btn5.addEventListener('mouseout', function () {
     alert("this is mouse out")
 })
 
@@ -291,7 +291,7 @@ btn7.removeEventListener("click", click2)
 
 // // MouseEvent
 
-function mouseevent(){
+function mouseevent() {
     alert("onDoubleclick  onmouseover onmouseout onmouseup onmousedown onclick oncontextmenu")
 }
 
@@ -300,25 +300,25 @@ function mouseevent(){
 
 window.addEventListener('keyup', checkkey);//keydown // keyprees
 
-function checkkey(event){
+function checkkey(event) {
     console.log(event.key);
 }
 
 
 // Scroll Event
 
-window.addEventListener("scroll" , checkscroll);
+window.addEventListener("scroll", checkscroll);
 
 function checkscroll() {
-   console.log("scrolling...");
+    console.log("scrolling...");
 }
 
-window.addEventListener("wheel" , checkweel);
+window.addEventListener("wheel", checkweel);
 
-function checkweel(event){
-    if(event.deltaY < 0){
+function checkweel(event) {
+    if (event.deltaY < 0) {
         console.log("scroll up");
-    }else if(event.deltaY > 0){
+    } else if (event.deltaY > 0) {
         console.log("scroll down")
     }
 }
@@ -338,22 +338,85 @@ function scrollpx() {
 
 let o = document.getElementById("name");
 
-o.addEventListener("focus" , myfocusfn);
-o.addEventListener("blur" , myblurfn);
+o.addEventListener("focus", myfocusfn);
+o.addEventListener("blur", myblurfn);
 
 // o.addEventListener('change' , function (){
 //     console.log(this.value);
 // })
 
-o.addEventListener('input' , function (){
+o.addEventListener('input', function () {
     console.log(this.value);
 })
 
-function myfocusfn(){
-  o.style.background = "black";
-  o.style.color = "white"
+function myfocusfn() {
+    o.style.background = "black";
+    o.style.color = "white"
 }
 
 function myblurfn() {
-    o.style.background = "green"  
+    o.style.background = "green"
 }
+
+
+
+
+// Bublling and Capturing Event
+
+let d4 = document.getElementById("mydiv");
+let mybtn = document.getElementById("mybtn");
+
+mybtn.addEventListener("click", mybtnfn);
+d4.addEventListener("click", mydivfn);
+document.body.addEventListener("click", mybodyfn);
+
+function mybtnfn(event) {
+    console.log("Click.child..");
+    event.stopPropagation()
+}
+function mydivfn(event) {
+    console.log("Child.Parent..");
+    event.stopPropagation()
+}
+function mybodyfn() {
+    console.log("Parent.Prent...");
+}
+
+
+let d1 = document.getElementById("mydiv");
+let mybtn1 = document.getElementById("mybtn");
+
+mybtn1.addEventListener("click", mybtnfn1, true);
+d1.addEventListener("click", mydivfn1, true);
+document.body.addEventListener("click", mybodyfn1, true);
+
+function mybtnfn1() {
+    console.log("Click.child..");
+
+}
+function mydivfn1() {
+    console.log("Child.Parent..");
+
+}
+function mybodyfn1() {
+    console.log("Parent.Prent...");
+}
+
+
+
+// Prevent Default
+
+let from = document.getElementById("myform");
+from.addEventListener("click", myfromfn)
+
+function myfromfn(e) {
+    e.preventDefault();
+}
+
+let link = document.getElementById("anchor")
+link.addEventListener("click", function (e) {
+    e.preventDefault()
+    console.log("Click me");
+
+});
+
