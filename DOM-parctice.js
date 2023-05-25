@@ -54,14 +54,14 @@ for (i = 0; i < QueryAll.length; i++) {
 
 
 // // // Traversing elementse
- 
+
 
 let trv = document.getElementById("intro");
-let childtoprt = trv.parentElement; 
+let childtoprt = trv.parentElement;
 console.log(childtoprt);
 
 let trv1 = document.getElementById("intro2");
- let prttochild = trv1.firstElementChild;
+let prttochild = trv1.firstElementChild;
 //  let prttochild = trv1.lastElementChild;
 // let prttochild = trv1.children;
 // let prttochild = trv1.nextElementSibling;
@@ -122,7 +122,7 @@ let u3 = document.getElementById('intro6');
 let elm3 = document.createElement('li');
 elm3.textContent = "hello guys i am list 6";
 let postion = u3.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling;
-u.insertBefore(elm3, postion);
+u3.insertBefore(elm3, postion);
 
 let perent = document.body;
 
@@ -233,7 +233,7 @@ console.log(tf);
 
 
 
-// // Width and Heigth of an Element
+// // Width and Heigth of an Element.
 
 let Width = p.offsetWidth;
 let Heigth = p.offsetHeight;
@@ -279,7 +279,7 @@ function click2() {
 btn7.addEventListener("click", click1);
 btn7.addEventListener("click", click2);
 
-btn7.removeEventListener("click", click2)
+btn7.removeEventListener("click", "click1")
 
 
 // // Page Load Event
@@ -321,14 +321,14 @@ function checkweel(event) {
     }
 }
 
-
+const body = document.querySelector('body')
 window.addEventListener("scroll", scrollpx)
 
 function scrollpx() {
     if (window.pageYOffset > 150) {
-        document.body.style.background = "green"
+        body.style.backgroundColor = "green"
     } else {
-        document.body.style.background = "white"
+        body.style.backgroundColor = "red"
     }
 }
 
@@ -339,7 +339,7 @@ let o = document.getElementById("name");
 o.addEventListener("focus", myfocusfn);
 o.addEventListener("blur", myblurfn);
 
-// o.addEventListener('change' , function (){
+// o.addEventListener('change', function () {
 //     console.log(this.value);
 // })
 
@@ -370,11 +370,11 @@ document.body.addEventListener("click", mybodyfn);
 
 function mybtnfn(event) {
     console.log("Click.child..");
-    event.stopPropagation()
+    // event.stopPropagation()
 }
 function mydivfn(event) {
     console.log("Child.Parent..");
-    event.stopPropagation()
+    // event.stopPropagation()
 }
 function mybodyfn() {
     console.log("Parent.Prent...");
