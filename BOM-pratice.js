@@ -69,7 +69,7 @@ btn4.addEventListener('click', function () {
 
 
 
-// Location Object
+// // Location Object
 
 console.log(location.href);
 console.log(location.pathname);
@@ -84,7 +84,7 @@ function fun() {
 }
 
 
-// Navigetor
+// // Navigetor
 
 console.log(navigator.appVersion);
 console.log(navigator.appCodeName);
