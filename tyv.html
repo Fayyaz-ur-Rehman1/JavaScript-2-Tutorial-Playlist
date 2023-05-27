@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Video Sharing Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section#videos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Video Sharing Website</h1>
+    </header>
+
+    <main>
+        <section id="videos">
+            <!-- Video thumbnails and details will be added dynamically using JavaScript -->
+        </section>
+    </main>
+
+    <script>
+        // Array of video data (for demonstration purposes)
+        const videos = [
+            {
+                title: "Video 1",
+                thumbnail: "video1.jpg",
+                url: "https://www.youtube.com/watch?v=VIDEO_ID_1"
+            },
+            {
+                title: "Video 2",
+                thumbnail: "video2.jpg",
+                url: "https://www.youtube.com/watch?v=VIDEO_ID_2"
+            },
+            // Add more video data as needed
+        ];
+
+        // Function to dynamically generate video thumbnails and details
+        function generateVideoElements() {
+            const videoSection = document.getElementById("videos");
+
+            videos.forEach(video => {
+                const videoElement = document.createElement("div");
+                videoElement.classList.add("video");
+
+                const thumbnailElement = document.createElement("img");
+                thumbnailElement.src = video.thumbnail;
+
+                const titleElement = document.createElement("h3");
+                titleElement.textContent = video.title;
+
+                const linkElement = document.createElement("a");
+                linkElement.href = video.url;
+                linkElement.textContent = "Watch video";
+
+                videoElement.appendChild(thumbnailElement);
+                videoElement.appendChild(titleElement);
+                videoElement.appendChild(linkElement);
+
+                videoSection.appendChild(videoElement);
+            });
+        }
+
+        // Call the function to generate video elements
+        generateVideoElements();
+    </script>
+</body>
+
+</html>
